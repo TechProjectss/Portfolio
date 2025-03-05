@@ -17,15 +17,15 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.send(
-            "service_826xdvs", // Replace with your EmailJS Service ID
-            "template_q0oosfi", // Replace with your EmailJS Template ID
+            "service_826xdvs",
+            "template_q0oosfi",
             formData,
-            "7m8I7DY8fAuqmfzRw"  // Replace with your EmailJS Public Key
+            "7m8I7DY8fAuqmfzRw"
         )
             .then((response) => {
                 console.log("Message Sent Successfully!", response);
                 alert("Message sent successfully!");
-                setFormData({ name: "", email: "", message: "" }); // Clear form
+                setFormData({ name: "", email: "", message: "" });
             })
             .catch((error) => {
                 console.error("Error sending message:", error);
