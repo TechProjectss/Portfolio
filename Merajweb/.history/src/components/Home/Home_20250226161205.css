@@ -1,0 +1,88 @@
+/* Hero Container */
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Swiper Styling */
+.hero-slider {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #080824;
+}
+
+/* Different Backgrounds for Each Slide */
+.hero-slide:nth-child(1) {
+    background-image: url("../../assets/int1.jpg");
+}
+
+.hero-slide:nth-child(2) {
+    background-image: url("../../assets/int2.jpg");
+}
+
+.hero-slide:nth-child(3) {
+    background-image: url("../../assets/int3.jpg");
+}
+
+.hero-slide:nth-child(4) {
+    background-image: url("../../assets/int4.jpg");
+}
+
+.hero-slide:nth-child(5) {
+    background-image: url("../../assets/int5.jpg");
+}
+
+/* Center Content */
+.content {
+    max-width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Heading Styles */
+.content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Responsive Fix */
+@media (max-width: 900px) {
+    .content {
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
