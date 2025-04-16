@@ -1,0 +1,27 @@
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(rgba(49, 48, 58, 0.7),rgba(49,48,58,0.7)),url('../../assets/hero17.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+}
+.hero-text h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-text h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}

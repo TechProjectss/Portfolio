@@ -1,0 +1,6 @@
+.hero{
+    min-height: 100vh;
+    background: url('../../assets/hero25.jpg'); 
+    background-size: cover;
+    background-position: center;
+}

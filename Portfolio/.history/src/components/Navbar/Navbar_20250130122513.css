@@ -1,0 +1,13 @@
+nav{
+    width: 100%;
+    background: #06063a;
+    color: #ffff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}

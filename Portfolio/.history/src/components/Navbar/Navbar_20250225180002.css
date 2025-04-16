@@ -1,0 +1,92 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    color: #080824;
+    padding: 12px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 60px; /* Fixed height to prevent layout shifts */
+    background: rgba(8, 8, 36, 0.9); /* Ensures visibility on different backgrounds */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    mix-blend-mode: color-burn;
+}
+
+/* Navigation Links */
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items li {
+    margin: 0 15px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #82adad;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-items a:hover {
+    color: #8ca5a5;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) { /* Adjusted to cover tablets and smaller devices */
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 60px); /* Ensures full height for better usability */
+        background: rgba(8, 8, 36, 0.95);
+        text-align: center;
+        padding-top: 20px;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-items.open {
+        transform: translateY(0);
+    }
+
+    .nav-items li {
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,75 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-text {
+    max-width: 800px;
+    padding-top: 50px; /* Adjust this to push content lower */
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 15px auto 30px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Button Styles */
+
+.primary {
+    background: transparent;
+    color: #8ca5a5;
+    border: 2px solid #8ca5a5;
+}
+
+.primary:hover {
+    background: #8ca5a5;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.secondary {
+    background: transparent;
+    color: #8ca5a5;
+    border: 2px solid #8ca5a5;
+}
+
+.secondary:hover {
+    background: #8ca5a5;
+    color: #fff;
+    transform: scale(1.05);
+}
